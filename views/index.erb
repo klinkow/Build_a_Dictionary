@@ -1,0 +1,11 @@
+<h1>Build a Dictionary</h1>
+<br>
+<h2>Words:</h2>
+<br>
+<ul>
+  <% @words.each() do |the_word| %>
+    <li><a href="/definition/<%= word.id() %>"><%= the_word.word() %></a></li>
+  <% end %>
+</ul>
+<br>
+<a href="/add_word">Add New Word</a>
