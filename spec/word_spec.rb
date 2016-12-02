@@ -2,23 +2,24 @@ require('rspec')
 require('word')
 
 describe('Word') do
+
   before() do
     Word.clear()
-    test_word1 = Word.new("apple")
-    test_word1.save()
-    test_word2 = Word.new("banana")
-    test_word2.save()
+    @test_word1 = Word.new("apple")
+    @test_word1.save()
+    @test_word2 = Word.new("banana")
+    @test_word2.save()
   end
 
   describe("#word") do
     it("returns the word") do
-      expect(test_word1.word()).to(eq("apple"))
+      expect(@test_word1.word()).to(eq("apple"))
     end
   end
 
   describe(".all") do
     it("returns all words that have been saved in an array") do
-      expect(Word.all()).to(eq([test_word1, test_word2]))
+      expect(Word.all()).to(eq([@test_word1, @test_word2]))
     end
   end
 
@@ -31,13 +32,13 @@ describe('Word') do
 
   describe("#id") do
     it("returns the id of the word") do
-      expect(test_word1.id()).to(eq(1))
+      expect(@test_word1.id()).to(eq(1))
     end
   end
 
   describe(".find") do
     it("returns a word by its id number") do
-      expect(Word.find(test_word1.id())).to(eq(test_word1))
+      expect(Word.find(@test_word1.id())).to(eq(@test_word1))
     end
   end
 end
