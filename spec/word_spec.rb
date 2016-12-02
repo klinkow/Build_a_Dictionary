@@ -5,9 +5,9 @@ describe('Word') do
 
   before() do
     Word.clear()
-    @test_word1 = Word.new("apple")
+    @test_word1 = Word.new(:word => "apple", :definitions => [])
     @test_word1.save()
-    @test_word2 = Word.new("banana")
+    @test_word2 = Word.new(:word => "banana", :definitions => [])
     @test_word2.save()
   end
 

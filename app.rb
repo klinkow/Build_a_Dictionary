@@ -11,7 +11,7 @@ end
 
 post('/') do
   new_word = params.fetch('new_word')
-  word_adding = Word.new('new_word')
+  word_adding = Word.new(new_word)
   word_adding.save()
   @words = Word.all()
   erb(:index)

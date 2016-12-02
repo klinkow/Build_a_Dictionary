@@ -1,8 +1,10 @@
 class Word
+  attr_reader(:word, :definitions)
   @@words = []
 
-  define_method(:initialize) do |word|
-    @word = word
+  define_method(:initialize) do |attributes|
+    @word = attributes.fetch(:word)
+    @definitions = attributes.fetch(:definitions)
     @id = @@words.length() + 1
   end
 
