@@ -3,32 +3,12 @@ class Definition
   @@definitions = []
 
   define_method(:initialize) do |attributes|
-    @definition1 = attributes.fetch(:definition1)
-    @definition2 = attributes.fetch(:definition2)
-    @definition3 = attributes.fetch(:definition3)
-    @definition4 = attributes.fetch(:definition4)
-    @definition5 = attributes.fetch(:definition5)
+    @definition = attributes.fetch(:definition)
     @id = @@definitions.length() + 1
   end
 
-  define_method(:definition1) do
-    @definition1
-  end
-
-  define_method(:definition2) do
-    @definition2
-  end
-
-  define_method(:definition3) do
-    @definition3
-  end
-
-  define_method(:definition4) do
-    @definition4
-  end
-
-  define_method(:definition5) do
-    @definition5
+  define_method(:definition) do
+    @definition
   end
 
   define_method(:id) do

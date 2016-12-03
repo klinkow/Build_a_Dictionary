@@ -1,5 +1,16 @@
 <h1><%= @word.word() %>:</h1>
-<!-- indent -->
-<!-- definition by id -->
-<a href="/add_definition">Add definition</a>
+<ul>
+  <% @word.definitions.each() do |the_definition| %>
+  <li><%= the_definition.definition() %></li>
+  <br>
+  <% end %>
+</ul>
+<br>
+
+<form action="/definition" method="post">
+  <input type= "hidden" name= "word_id" value= "<%= @word.id() %>">
+  <input type="text" name="new_definition" id="new_definition">
+  <button type="submit">Add Definition</button>
+</form>
+
 <a href="/">Back</a>

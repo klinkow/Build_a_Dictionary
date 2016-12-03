@@ -36,6 +36,12 @@ describe('Word') do
     end
   end
 
+  describe("#add_definition") do
+    it("adds a definition to the word") do
+      expect(@test_word1.add_definition("Hello there")).to(eq(["Hello there"]))
+    end
+  end
+
   describe(".find") do
     it("returns a word by its id number") do
       expect(Word.find(@test_word1.id())).to(eq(@test_word1))
