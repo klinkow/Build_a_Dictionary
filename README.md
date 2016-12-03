@@ -21,6 +21,10 @@ _The webapp files can be viewed online [here](https://github.com/klinkow/Build_a
 
 _The webapp can be viewed [here](https://immense-woodland-26205.herokuapp.com/) as of 12/2/16._
 
+## Known Bugs
+
+_The heroku deployment has an application error._
+
 ## Support and contact details
 
 _If you have any issues contact klinkow@gmail.com_
