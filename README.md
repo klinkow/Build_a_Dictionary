@@ -14,7 +14,7 @@ _This web app will take words and definitions from the user and display them._
 * _From the command line type "git clone https://github.com/klinkow/Build_a_Dictionary.git" to download the webapp files._
 * _Navigate to the download directory in the command line and enter "bundle" to download additional required gems._
 * _Enter "ruby app.rb" to host the site locally._
-* _Navigate browser to "localhost:4567" (unless previous step indicates a different local host number)._
+* _Navigate browser to "localhost:4567"  (unless previous step indicates a different local host number)._
 * _Enjoy!!_
 
 _The webapp files can be viewed online [here](https://github.com/klinkow/Build_a_Dictionary)._
